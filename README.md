@@ -11,15 +11,19 @@
 
 ---
 
- 네트워크 및 보안 정책 구성표
-항목	구성 요소	주요 설명 및 적용 내용
-VLAN 설계	VLAN 10	서버 영역 (LogAnalyzer, FTP 등)
-VLAN 20	네트워크 영역 (테스트용 클라이언트)
-VLAN 30	보안 영역 (Zabbix, OSSEC 등)
-라우팅 구성	R1 ~ R5	정적 라우팅 설정, 구간별 통신 제어
-ACL 설정	R3	Kali 접근 허용, PC4→Firefox3 Ping 차단 등 세부 필터링
-방화벽 (ASAv)	Inside/DMZ/Outside 구분	구간별 HTTPS, Telnet, SSH 등 통제
-DVWA → 내부 위치	외부 접근은 telnet/https만 허용
+## 🌐 네트워크 및 보안 정책 구성표
+
+| 항목           | 구성 요소                 | 주요 설명 및 적용 내용                                      |
+| -------------- | ------------------------- | ------------------------------------------------------------ |
+| **VLAN 설계**  | VLAN 10                   | 서버 영역 (LogAnalyzer, FTP 등)                             |
+|                | VLAN 20                   | 네트워크 영역 (테스트용 클라이언트)                         |
+|                | VLAN 30                   | 보안 영역 (Zabbix, OSSEC 등)                                |
+| **라우팅 구성**| R1 ~ R5                   | 정적 라우팅 설정, 구간별 통신 제어                         |
+| **ACL 설정**   | R3                        | Kali 접근 허용, PC4→Firefox3 Ping 차단 등 세부 필터링       |
+| **방화벽 (ASAv)** | Inside/DMZ/Outside 구분 | 구간별 HTTPS, Telnet, SSH 등 통제                          |
+|                | DVWA → 내부 위치          | 외부 접근은 Telnet/HTTPS만 허용                             |
+| **VPN 제어**   | pfSense                   | OpenVPN 서버 구성, 가상 외부 접속 환경 실습                 |
+
 
 ---
 
