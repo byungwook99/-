@@ -45,31 +45,31 @@
 
 ## 🔍 실습 포인트
 
-### 🔸 침투 및 취약점 공격 실습
+###  침투 및 취약점 공격 실습
 
 - SQL Injection 및 Blind SQLi 공격을 통해 DB 탈취
 - File Upload 우회 (php.kr, .phtml 등) 후 WebShell 업로드
 - Reverse Shell 생성 및 권한 상승 (SetUID + Sticky Bit 조합)
 - DVWA 플랫폼을 통한 OWASP Top 10 실습
 
-### 🔸 침입 탐지 및 로그 분석
+###  침입 탐지 및 로그 분석
 
 - Suricata: HTTP GET, XSS, SQLi, Reverse Shell 등 탐지 룰 작성
 - OSSEC: File Integrity 검사 및 Rootkit 감지 실습
 
-### 🔸 방화벽 및 접근 제어 테스트
+###  방화벽 및 접근 제어 테스트
 
 - pfSense 기반 VPN 연동 실습 및 외부 접근 제한
 - ASAv를 통한 DMZ/Inside/Outside 분리, Telnet/SSH 제한
 - 라우터(R1~R5) ACL을 통한 Ping, SSH, HTTP 접근 통제
 
-### 🔸 시스템 보안 환경 구성 및 유지
+###  시스템 보안 환경 구성 및 유지
 
 - 파일/폴더 권한 관리 실습 (`chmod`, `chown`, `setfacl` 등)
 - `passwd` 정책 강화 (특수문자 포함, 최소 길이, 만료일 설정)
 - DNS 내부 도메인 설정 및 서버 연동 실습
 
-### 🔸 모니터링 및 자동화
+###  모니터링 및 자동화
 
 - Zabbix: Agent 설치 및 로그 수집
 - LogAnalyzer: 시스템 로그 통합 뷰 구성
