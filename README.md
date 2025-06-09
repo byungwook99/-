@@ -7,7 +7,7 @@
 
 ## 🗺️ 전체 토폴로지 구성도
 
-[![보안 실습 토폴로지](ac1e1704-e600-4dfa-b7d9-def45a4ff3ba.png)](ac1e1704-e600-4dfa-b7d9-def45a4ff3ba.png)
+[![보안 실습 토폴로지](gns3 topology.PNG)](gns3 topology.PNG)
 
 ---
 
