@@ -11,30 +11,15 @@
 
 ---
 
-## 🌐 네트워크 구성 개요
-
-- **VLAN 분할 및 계층 구조 설계**
-  - VLAN 10: 서버 (Server Zone)
-  - VLAN 20: 네트워크 장비 (Network Zone)
-  - VLAN 30: 보안 장비 (Security Zone)
-
-- **라우팅 및 인터라우터 통신**
-  - R1~R5 간 정적 라우팅 구성
-  - 내부 네트워크 세분화 및 흐름 제어 가능
-
-- **ACL (Access Control List) 설정**
-  - R3: 특정 호스트에서 Kali 접근 허용
-  - PC4 → Firefox3 Ping 차단 등 세부 제어 시나리오 구현
-  - 불필요한 트래픽 차단을 통한 최소 권한 원칙 적용
-
-- **ASAv (Adaptive Security Appliance) 방화벽**
-  - Inside/DMZ/Outside 영역 분리
-  - DVWA 서버는 Inside 영역에 위치하며, 외부 접근은 https/telnet만 허용
-  - 서버와 내부 호스트 간 SSH, DNS 제어 적용
-
-- **pfSense 기반 VPN 설정**
-  - Remote-Access를 위한 OpenVPN 구성
-  - 가상사설망을 통한 외부 사용자 접근 테스트 가능
+ 네트워크 및 보안 정책 구성표
+항목	구성 요소	주요 설명 및 적용 내용
+VLAN 설계	VLAN 10	서버 영역 (LogAnalyzer, FTP 등)
+VLAN 20	네트워크 영역 (테스트용 클라이언트)
+VLAN 30	보안 영역 (Zabbix, OSSEC 등)
+라우팅 구성	R1 ~ R5	정적 라우팅 설정, 구간별 통신 제어
+ACL 설정	R3	Kali 접근 허용, PC4→Firefox3 Ping 차단 등 세부 필터링
+방화벽 (ASAv)	Inside/DMZ/Outside 구분	구간별 HTTPS, Telnet, SSH 등 통제
+DVWA → 내부 위치	외부 접근은 telnet/https만 허용
 
 ---
 
